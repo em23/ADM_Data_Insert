@@ -1,0 +1,890 @@
+[
+  {
+    "identity": {
+      "id": "3df63b73-073d-45be-b8f1-c49d37b3e0d5",
+      "name": "Non-Disclosure",
+      "description": null
+    },
+    "version": null,
+    "entity": {
+      "parent": {
+        "id": null,
+        "name": null,
+        "description": null
+      },
+      "type": "",
+      "state": "DRAFT",
+      "active": null,
+      "alias": [
+        ""
+      ],
+      "source": "",
+      "bindings": [
+        {
+          "type": "",
+          "code": "",
+          "id": "23af3789-07ff-4598-b72a-1fef79c9d33b"
+        }
+      ],
+      "history": {
+        "createdAt": "2021-04-16T09:43:02.171+00:00",
+        "createdBy": null,
+        "updatedAt": "2021-04-16T09:43:02.171+00:00",
+        "updatedBy": null,
+        "updatedNote": null,
+        "updatedMessage": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "retiredAt": null,
+        "retiredBy": null,
+        "completions": null
+      }
+    },
+    "parties": [
+      ""
+    ],
+    "attributes": [
+      {
+        "ordinal": 1,
+        "count": 1,
+        "type": "date",
+        "reference": "EffectiveDateAtrribute",
+        "format": "Effective",
+        "id": "b76f7f62-c219-4526-bdfe-2ca6d2537a3b"
+      },
+      {
+        "ordinal": 2,
+        "count": 1,
+        "type": "date",
+        "reference": "ExpirationDateAtrribute",
+        "format": "Expires",
+        "id": "9f501adc-45ba-4d9e-a1bf-55dcd44e02b1"
+      },
+      {
+        "ordinal": 3,
+        "count": 1,
+        "type": "party",
+        "reference": "DisclosingPartyAttribute",
+        "format": "Discloser",
+        "id": "string"
+      },
+      {
+        "ordinal": 4,
+        "count": 1,
+        "type": "contact",
+        "reference": "DisclosingPartyContactAttribute",
+        "format": "contact",
+        "id": "string"
+      },
+      {
+        "ordinal": 5,
+        "count": 1,
+        "type": "party",
+        "reference": "ReceivingPartyAttribute",
+        "format": "Receipient",
+        "id": "string"
+      }
+    ],
+    "events": null,
+    "views": [
+      {
+        "ordinal": 1,
+        "type": "",
+        "form": "",
+        "language": "",
+        "elements": [
+          {
+            "order": 1,
+            "parent": {
+              "id": "35378be4-6c55-45c6-8ff3-1fd8eb5dd5bb",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "NON-DISCLOSURE AGREEMENT (NDA)",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "title_controller",
+              "dataset": "[]"
+            },
+            "id": "a9f5179f-cc11-4d04-801f-1658b5adc7bb"
+          },
+          {
+            "order": 2,
+            "parent": {
+              "id": "6988d093-c667-4d5c-aef9-017420ac3184",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "This Nondisclosure Agreement or (\"Agreement\") has been entered into on the date of {{EffectiveDate}}(\"Effective Date\") and {{ExpirationDate}}(\"Expiration Date\") and is by and between:",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[{\"name\": \"EffectiveDate\",\"value\": \"EffectiveDateAtrribute\"},{\"name\": \"ExpirationDate\",\"value\": \"ExpirationDateAtrribute\"}]"
+            },
+            "id": "b027d7b3-c5c1-4b64-b891-075779416c9b"
+          },
+          {
+            "order": 3,
+            "parent": {
+              "id": "9c5d04e8-f8e1-49fd-839e-5b4e97075153",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "Party Disclosing Information",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            },
+            "id": "a722225e-69d3-4574-99cf-4b328e130a2e"
+          },
+          {
+            "order": 4,
+            "parent": {
+              "id": "43669d52-08e1-4627-ab37-c3e86ce6bcf5",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "{{DISCLOSING PARTY}} with a mailing address of  {{STREET_ADDRESS}}, {{CITY}} {{STATE}}  {{ZIP}} (“Disclosing Party”)",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[{\"name\": \"DISCLOSING PARTY\",\"value\": \"DisclosingPartyAttribute\"}]"
+            },
+            "id": "957e1efc-0800-4487-961c-301f8c2b4940"
+          },
+          {
+            "order": 5,
+            "parent": {
+              "id": "6e51fa47-5c2d-471a-b59b-38d4bf6f3e6d",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "Party Receiving Information",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            },
+            "id": "5bcd32e3-f80a-404b-a51c-1430d1579f5f"
+          },
+          {
+            "order": 6,
+            "parent": {
+              "id": "3f4a45ab-9bd9-4f22-8f17-4f51b386d648",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "{{RECEIVING PARTY}} with a mailing address of  {{[STREET_ADDRESS]}}, {{[CITY]}} {{[STATE]}}  {{[ZIP]}} (“Receiving Party”)",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[{\"name\": \"RECEIVING PARTY\",\"value\": \"ReceivingPartyAttribute\"}]"
+            },
+            "id": "2ea51575-fa8a-4fb6-a34c-ceecd2fbbb97"
+          },
+          {
+            "order": 7,
+            "parent": {
+              "id": "56ef869c-9f0a-440d-8ec7-be511d21730f",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "For the purpose of preventing the unauthorized disclosure of Confidential Information as defined below. ",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            },
+            "id": "bf7c23f6-5e3d-4254-94be-50a819f9c54d"
+          },
+          {
+            "order": 8,
+            "parent": {
+              "id": "string",
+              "resourceId": null,
+              "name": null,
+              "description": null,
+              "type": null,
+              "uri": null
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "<span class=\"table-Container\"><table class=\"styled-table\"><tr><th><b>Disclosing Party</b>:&nbsp;{{DISCLOSING PARTY}}</th></tr><tr><td>Signature:</td></tr> <tr><td>Name:&nbsp;{{DISCLOSING PARTY CONTACT}} </td></tr></table></span>",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "table_controller",
+              "dataset": "[{\"name\": \"DISCLOSING PARTY\",\"value\": \"DisclosingPartyAttribute\"},{\"name\": \"DISCLOSING PARTY CONTACT\",\"value\": \"DisclosingPartyContactAttribute\"}]"
+            },
+            "id": "string"
+          }
+        ],
+        "id": "3de410e3-c3da-4e03-8756-4bb8a9dc25e3"
+      }
+    ]
+  },
+  {
+    "identity": {
+      "id": "96937220-5db0-444d-9dc6-e873259889fc",
+      "name": "Confidential Information",
+      "description": ""
+    },
+    "entity": {
+      "parent": {},
+      "type": "",
+      "state": "DRAFT",
+      "active": "",
+      "alias": [
+        ""
+      ],
+      "source": "",
+      "bindings": [
+        {
+          "identity": {},
+          "type": "",
+          "code": ""
+        }
+      ],
+      "tags": [
+        {
+          "Id": "",
+          "Name": "",
+          "Description": ""
+        }
+      ],
+      "properties": [
+        {
+          "Identity": {
+            "Id": "",
+            "Name": "",
+            "Description": ""
+          },
+          "Type": "String",
+          "Reference": "",
+          "Value": ""
+        }
+      ]
+    },
+    "parties": [
+      ""
+    ],
+    "attributes": [],
+    "views": [
+      {
+        "identity": {
+          "Id": "web",
+          "Name": "",
+          "Description": ""
+        },
+        "ordinal": "1",
+        "type": "",
+        "form": "",
+        "language": "",
+        "elements": [
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "1",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "1. Definition of Confidential Information.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "2",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "For purposes of this Agreement, \"Confidential Information\" shall include all information or material that has or could have ",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "3",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "2. Exclusions from Confidential Information.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "4",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "Receiving Party's obligations under this Agreement do not extend to information that is: (a) publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party; ",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "5",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "3. Obligations of Receiving Party.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "6",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "Receiving Party shall hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party.  ",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "7",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "4. Time Periods.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "8",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "The nondisclosure provisions of this Agreement shall survive the termination of this Agreement and Receiving Party's duty to",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "9",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "5. Relationships.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "10",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "Nothing contained in this Agreement shall be deemed to constitute either party a partner, joint venture or employee of the other party for any purpose.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "11",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "6. Severability.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "12",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "If a court finds any provision of this Agreement invalid or unenforceable, the remainder of this Agreement shall be interpreted so as best to affect the intent of the parties.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "13",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "7. Integration.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "14",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "This Agreement expresses the complete understanding of the parties with respect to the subject matter and supersedes all prior proposals, ",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "15",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "8. Waiver.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "16",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "The failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "17",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "9. Notice of Immunity.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "18",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "Employee is provided notice that an individual shall not be held criminally or civilly liable under any",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[]"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "identity": {
+      "id": "destruction_of_materials",
+      "name": "Destruction Of Materials",
+      "description": ""
+    },
+    "entity": {
+      "parent": {},
+      "type": "",
+      "state": "DRAFT",
+      "active": "",
+      "alias": [
+        ""
+      ],
+      "source": "",
+      "bindings": [
+        {
+          "identity": {},
+          "type": "",
+          "code": ""
+        }
+      ],
+      "tags": [
+        {
+          "Id": "",
+          "Name": "",
+          "Description": ""
+        }
+      ],
+      "properties": [
+        {
+          "Identity": {
+            "Id": "",
+            "Name": "",
+            "Description": ""
+          },
+          "Type": "String",
+          "Reference": "",
+          "Value": ""
+        }
+      ]
+    },
+    "parties": [
+      ""
+    ],
+    "attributes": [
+      {
+        "identity": {
+          "Id": "clauseNameAttribute",
+          "Name": "Clause Name",
+          "Description": ""
+        },
+        "id": "clauseNameAttribute",
+        "reference": "clauseNameAttribute",
+        "ordinal": "1",
+        "count": "1",
+        "type": "text",
+        "default": "Clause Name",
+        "format": "Clause Name"
+      },
+      {
+        "identity": {
+          "Id": "expiryDateAttribute",
+          "Name": "Expires",
+          "Description": ""
+        },
+        "id": "expiryDateAttribute",
+        "reference": "expiryDateAttribute",
+        "ordinal": "2",
+        "count": "1",
+        "type": "date",
+        "default": "Expired Date",
+        "format": "Expired Date"
+      }
+    ],
+    "views": [
+      {
+        "identity": {
+          "Id": "web",
+          "Name": "",
+          "Description": ""
+        },
+        "ordinal": "1",
+        "type": "",
+        "form": "",
+        "language": "",
+        "elements": [
+          {
+            "identity": {
+              "Id": "bolded_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "1",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "Destruction of Materials.",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "bolding_controller",
+              "dataset": "[]"
+            }
+          },
+          {
+            "identity": {
+              "Id": "parameterized_element",
+              "Name": "",
+              "Description": ""
+            },
+            "order": "2",
+            "parent": {
+              "Id": "",
+              "Name": "",
+              "Description": ""
+            },
+            "visibility": "Visible",
+            "frame": "",
+            "style": "",
+            "image": "",
+            "text": "All Confidential Information and all materials disclosed hereunder shall remain the sole and exclusive property of the disclosing party. {{clauseName}} & {{expiryDate}}",
+            "alignment": "Left | Bottom",
+            "control": {
+              "control": "parameterized_controller",
+              "dataset": "[{\"name\": \"clauseName\",\"value\": \"clauseNameAttribute\"},{\"name\": \"expiryDate\",\"value\": \"expiryDateAttribute\"}]"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
