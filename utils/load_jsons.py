@@ -11,3 +11,10 @@ def get_clauses_data():
     with open("assets/clause.json", encoding='utf8') as f:
         data = json.load(f)
     return data
+
+
+def get_templates_data():
+    with open("assets/templates.json", encoding='utf8') as f:
+        data = json.load(f)
+    return data
+

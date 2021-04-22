@@ -1,0 +1,206 @@
+[
+    {
+      "identity": {
+        "id": "1962fc6e-f7d2-4715-a12e-3126262f69c7",
+        "name": "Sample Template",
+        "description": "Sample Template Description"
+      },
+      "version": {
+        "major": 0,
+        "minor": 0,
+        "revision": 0,
+        "label": "string"
+      },
+      "entity": {
+        "parent": {
+          "id": "string",
+          "name": "string",
+          "description": "string"
+        },
+        "type": "string",
+        "state": "string",
+        "active": true,
+        "alias": [
+          "string"
+        ],
+        "source": "string",
+        "bindings": [
+          {
+            "type": "string",
+            "code": "string",
+            "id": "3a497803-6480-4719-9ca4-28322c94c287"
+          }
+        ],
+        "history": {
+          "createdAt": "2021-04-22T09:01:31.000+00:00",
+          "createdBy": null,
+          "updatedAt": "2021-04-22T09:01:31.000+00:00",
+          "updatedBy": null,
+          "updatedNote": "string",
+          "updatedMessage": "string",
+          "reviewedAt": "2021-04-22T07:50:36.000+00:00",
+          "reviewedBy": "string",
+          "retiredAt": "2021-04-22T07:50:36.000+00:00",
+          "retiredBy": "string",
+          "completions": [
+            {
+              "status": "string",
+              "completedAt": "2021-04-22T07:50:36.468+00:00",
+              "completedBy": "string",
+              "completedNote": "string",
+              "completedMessage": "string"
+            }
+          ]
+        }
+      },
+      "parties": [
+        "string"
+      ],
+      "attributes": [
+        {
+          "ordinal": 0,
+          "count": 0,
+          "type": "string",
+          "reference": "string",
+          "format": "string",
+          "id": "3cad6370-b6fd-4f77-ad5a-467f4b4022b2"
+        }
+      ],
+      "components": [
+        {
+          "id": "f2f31bf4-f5c7-4399-b819-52fc8189d4a8",
+          "header": {
+            "order": 0,
+            "period": {
+              "start": "2021-04-22T07:50:36.000+00:00",
+              "end": "2021-04-22T07:50:36.000+00:00"
+            }
+          },
+          "type": "string",
+          "parties": [
+            {
+              "id": "c1c34846-236f-4111-943e-b753140547db",
+              "header": {
+                "order": 0,
+                "period": {
+                  "start": "2021-04-22T07:50:36.000+00:00",
+                  "end": "2021-04-22T07:50:36.000+00:00"
+                }
+              },
+              "role": "string",
+              "party": "string",
+              "dataset": "string"
+            }
+          ],
+          "specification": {
+            "clause": "df768d80-da14-4575-80d1-5a4804c8cf52",
+            "template": "string"
+          },
+          "integration": "string",
+          "dataset": "string"
+        }
+      ]
+    },
+    {
+      "identity": {
+        "id": "76c2d1c7-9463-4c57-b99e-5137b4081a1c",
+        "name": "Template Agreement",
+        "description": "Sample Template Description"
+      },
+      "version": {
+        "major": 0,
+        "minor": 0,
+        "revision": 0,
+        "label": "string"
+      },
+      "entity": {
+        "parent": {
+          "id": "string",
+          "name": "string",
+          "description": "string"
+        },
+        "type": "string",
+        "state": "string",
+        "active": true,
+        "alias": [
+          "string"
+        ],
+        "source": "string",
+        "bindings": [
+          {
+            "type": "string",
+            "code": "string",
+            "id": "210baf71-cfcc-4352-812d-67efbd5f72cc"
+          }
+        ],
+        "history": {
+          "createdAt": "2021-04-21T14:18:24.000+00:00",
+          "createdBy": null,
+          "updatedAt": "2021-04-22T15:43:52.000+00:00",
+          "updatedBy": null,
+          "updatedNote": "string",
+          "updatedMessage": "string",
+          "reviewedAt": "2021-04-21T14:16:33.000+00:00",
+          "reviewedBy": "string",
+          "retiredAt": "2021-04-21T14:16:33.000+00:00",
+          "retiredBy": "string",
+          "completions": [
+            {
+              "status": "string",
+              "completedAt": "2021-04-21T14:16:32.924+00:00",
+              "completedBy": "string",
+              "completedNote": "string",
+              "completedMessage": "string"
+            }
+          ]
+        }
+      },
+      "parties": [
+        "string"
+      ],
+      "attributes": [
+        {
+          "ordinal": 0,
+          "count": 0,
+          "type": "string",
+          "reference": "string",
+          "format": "string",
+          "id": "debb029b-1590-44d8-b9dd-e50da5a0d0c7"
+        }
+      ],
+      "components": [
+        {
+          "id": "b86c3794-ab20-44d8-99b9-fc98159afee7",
+          "header": {
+            "order": 0,
+            "period": {
+              "start": "2021-04-21T14:16:33.000+00:00",
+              "end": "2021-04-21T14:16:33.000+00:00"
+            }
+          },
+          "type": "string",
+          "parties": [
+            {
+              "id": "4e8bdbfd-b391-4cc8-a47b-e2b073400fd1",
+              "header": {
+                "order": 0,
+                "period": {
+                  "start": "2021-04-21T14:16:33.000+00:00",
+                  "end": "2021-04-21T14:16:33.000+00:00"
+                }
+              },
+              "role": "string",
+              "party": "string",
+              "dataset": "string"
+            }
+          ],
+          "specification": {
+            "clause": "c1aef618-141c-49b3-add8-4622496e8c93",
+            "template": "string"
+          },
+          "integration": "string",
+          "dataset": "string"
+        }
+      ]
+    }
+  ]
