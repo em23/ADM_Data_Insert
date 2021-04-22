@@ -886,5 +886,314 @@
         ]
       }
     ]
-  }
+  },
+  {
+  "identity": {
+    "id": "3394f2c9-53d7-450b-a548-245d2455c169",
+    "name": "Parties Table",
+    "description": "string"
+  },
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "label": "string"
+  },
+  "entity": {
+    "parent": {
+      "id": "string",
+      "name": "string",
+      "description": "string"
+    },
+    "type": "string",
+    "state": "string",
+    "active": true,
+    "alias": [
+      "string"
+    ],
+    "source": "string",
+    "bindings": [
+      {
+        "type": "string",
+        "code": "string",
+        "id": "c7183986-a526-4e5a-91eb-4cbd7f84b1d7"
+      }
+    ],
+    "history": {
+      "createdAt": "2021-04-21T13:21:59.116+00:00",
+      "createdBy": null,
+      "updatedAt": "2021-04-21T13:21:59.116+00:00",
+      "updatedBy": null,
+      "updatedNote": "string",
+      "updatedMessage": "string",
+      "reviewedAt": "2021-04-21T07:50:43.283+00:00",
+      "reviewedBy": "string",
+      "retiredAt": "2021-04-21T07:50:43.283+00:00",
+      "retiredBy": "string",
+      "completions": [
+        {
+          "status": "string",
+          "completedAt": "2021-04-21T07:50:43.283+00:00",
+          "completedBy": "string",
+          "completedNote": "string",
+          "completedMessage": "string"
+        }
+      ]
+    }
+  },
+  "parties": [
+    "string"
+  ],
+  "attributes": [
+    {
+      "ordinal": 2,
+      "count": 1,
+      "type": "contact",
+      "reference": "DisclosingPartyContact",
+      "format": "contact",
+      "id": "1fc86cb6-33d2-4730-83f9-361d21e7e32f"
+    },
+    {
+      "ordinal": 4,
+      "count": 1,
+      "type": "contact",
+      "reference": "ReceivingPartyContact",
+      "format": "contact",
+      "id": "9914fca7-f418-4744-ad76-8d3942f50d3b"
+    },
+    {
+      "ordinal": 1,
+      "count": 1,
+      "type": "party",
+      "reference": "DisclosingParty",
+      "format": "Discloser",
+      "id": "61dcf5d5-1fe2-4892-a093-74662010738c"
+    },
+    {
+      "ordinal": 3,
+      "count": 1,
+      "type": "party",
+      "reference": "ReceivingParty",
+      "format": "Recipient",
+      "id": "da696d66-ccd4-4efc-bdb4-7b83d54be0e0"
+    }
+  ],
+  "events": [
+    {
+      "ordinal": 0,
+      "type": "string",
+      "attributes": [
+        {
+          "ordinal": 0,
+          "count": 0,
+          "type": "string",
+          "reference": "string",
+          "format": "string",
+          "id": "ad1df065-7803-4080-b4bc-6e58a26a4fc9"
+        }
+      ],
+      "obligations": [
+        {
+          "id": "ec4180be-7a03-4508-891d-d7a04684f8ba",
+          "header": {
+            "order": 0,
+            "period": {
+              "start": "2021-04-21T07:50:43.283+00:00",
+              "end": "2021-04-21T07:50:43.283+00:00"
+            }
+          },
+          "party": "string",
+          "obligation": "string"
+        }
+      ],
+      "id": "4c0c22a1-2b3e-42b5-86ce-c38f4b67025a"
+    }
+  ],
+  "views": [
+    {
+      "ordinal": 0,
+      "type": "string",
+      "form": "string",
+      "language": "string",
+      "elements": [
+        {
+          "order": 0,
+          "parent": {
+            "id": "a78294e5-2c47-4000-80e7-d1cab22e6b86",
+            "resourceId": "string",
+            "name": "string",
+            "description": "string",
+            "type": "string",
+            "uri": "string"
+          },
+          "visibility": "string",
+          "frame": "string",
+          "style": "string",
+          "image": "string",
+          "text": "",
+          "alignment": "string",
+          "control": {
+            "control": "parameterized_table_controller",
+            "dataset": "[{\"name\": \"tableCell\",\"value\":[\"Disclosing Party {{DISCLOSING PARTY}}\",\"Receiving Party {{RECEIVING PARTY}}\",\"Signature:\",\"Signature:\",\"Name:{{DISCLOSING PARTY CONTACT}}\",\"Name:{{RECEIVING PARTY CONTACT}}\",\"Date:\",\"Date:\"]},{\"name\": \"DISCLOSING PARTY CONTACT\",\"value\": \"DisclosingPartyContact\"},{\"name\": \"DISCLOSING PARTY\",\"value\": \"DisclosingParty\"},{\"name\": \"DISCLOSING PARTY CONTACT\",\"value\": \"DisclosingPartyContact\"},{\"name\": \"RECEIVING PARTY\",\"value\": \"ReceivingParty\"},{\"name\": \"RECEIVING PARTY CONTACT\",\"value\": \"ReceivingPartyContact\"},{\"name\": \"column\",\"value\": \"2\"}]"
+          },
+          "id": "be1cecf9-938c-4762-98fc-8d9e097bde56"
+        }
+      ],
+      "id": "da02358b-785e-44a9-954a-118e6e31f193"
+    }
+  ]
+},{
+  "identity": {
+    "id": "fba65163-69e5-4766-aff3-70942348db72",
+    "name": "Jursidiction",
+    "description": "string"
+  },
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "label": "string"
+  },
+  "entity": {
+    "parent": {
+      "id": "string",
+      "name": "string",
+      "description": "string"
+    },
+    "type": "string",
+    "state": "string",
+    "active": true,
+    "alias": [
+      "string"
+    ],
+    "source": "string",
+    "bindings": [
+      {
+        "type": "string",
+        "code": "string",
+        "id": "c3c63a10-738d-444e-beab-f06c14d40d6b"
+      }
+    ],
+    "history": {
+      "createdAt": "2021-04-21T08:13:43.001+00:00",
+      "createdBy": null,
+      "updatedAt": "2021-04-21T08:13:43.001+00:00",
+      "updatedBy": null,
+      "updatedNote": "string",
+      "updatedMessage": "string",
+      "reviewedAt": "2021-04-21T07:50:43.283+00:00",
+      "reviewedBy": "string",
+      "retiredAt": "2021-04-21T07:50:43.283+00:00",
+      "retiredBy": "string",
+      "completions": [
+        {
+          "status": "string",
+          "completedAt": "2021-04-21T07:50:43.283+00:00",
+          "completedBy": "string",
+          "completedNote": "string",
+          "completedMessage": "string"
+        }
+      ]
+    }
+  },
+  "parties": [
+    "string"
+  ],
+  "attributes": [
+{
+      "ordinal": 0,
+      "count": 1,
+      "type": "dropdown",
+      "reference": "jurisdiction",
+      "format": "Jurisdiction",
+      "id": "3cacc2d2-fc2c-4ba6-abd9-886ffbc079a8"
+    }
+  ],
+  "events": [
+    {
+      "ordinal": 0,
+      "type": "string",
+      "attributes": [
+        {
+          "ordinal": 0,
+          "count": 0,
+          "type": "string",
+          "reference": "string",
+          "format": "string",
+          "id": "a65e2608-97d0-4188-9ba0-36a76b2e114e"
+        }
+      ],
+      "obligations": [
+        {
+          "id": "7052351e-414a-47b8-befa-bb52d279ebf5",
+          "header": {
+            "order": 0,
+            "period": {
+              "start": "2021-04-21T07:50:43.283+00:00",
+              "end": "2021-04-21T07:50:43.283+00:00"
+            }
+          },
+          "party": "string",
+          "obligation": "string"
+        }
+      ],
+      "id": "36d7aafc-13a6-41f0-9b7c-1877cef42631"
+    }
+  ],
+  "views": [
+    {
+      "ordinal": 0,
+      "type": "string",
+      "form": "string",
+      "language": "string",
+      "elements": [
+        {
+          "order": 0,
+          "parent": {
+            "id": "ff588156-f82c-4fff-a6c3-564a44af0d19",
+            "resourceId": "string",
+            "name": "string",
+            "description": "string",
+            "type": "string",
+            "uri": "string"
+          },
+          "visibility": "string",
+          "frame": "string",
+          "style": "string",
+          "image": "string",
+          "text": "General rights and obligations.",
+          "alignment": "string",
+          "control": {
+            "control": "title_controller",
+            "dataset": "string"
+          },
+          "id": "fe5a4463-048f-4c39-844e-1716161cb61b"
+        },
+        {
+          "order": 1,
+          "parent": {
+            "id": "07f81b94-5682-46f0-addb-da04cb522ef2",
+            "resourceId": "string",
+            "name": "string",
+            "description": "string",
+            "type": "string",
+            "uri": "string"
+          },
+          "visibility": "string",
+          "frame": "string",
+          "style": "string",
+          "image": "string",
+          "text": "",
+          "alignment": "string",
+          "control": {
+            "control": "table_controller",
+            "dataset": "[{\"name\": \"column\",\"value\": \"2\"},{\"name\": \"tableCell\",\"value\": [\"Australia\",\"This agreement is governed by the laws of New.\",\"Israel\",\"The laws of Israel govern this agreement.:\",\"Germany\",\"This agreement, and any claim, right, and dispute arising from or in connection with this agreement or our relationship hereunder, will be governed by the laws of the Federal Republic of Germany, excluding its conflict of laws rules. Exclusive venue (ausschließlicher Gerichtsstand) shall be Berlin, Germany, provided that no other mandatory exclusive venue applies.\",\"Ireland\",\"This agreement and any disputes or claims arising out of or in connection with it or its subject matter or formation (including without limitation non-contractual disputes or claims) are governed by and construed in accordance with the law of the Republic of Ireland.\"]}]"
+          },
+          "id": "b7a25cde-9d44-45a4-a775-d536abebafe5"
+        }
+      ],
+      "id": "7fee0fee-0cc2-4cf5-9349-1a7a55b6053e"
+    }
+  ]
+}
 ]
